@@ -36,12 +36,12 @@ sc = MinMaxScaler()
 
 x_train = sc.fit_transform(x_train)
 x_test = sc.fit_transform(x_test)
-from sklearn.decomposition import PCA
+"""from sklearn.decomposition import PCA
 
 pca = PCA(n_components = None)
 
 x_train = pca.fit_transform(x_train)
-x_test = pca.transform(x_test)
+x_test = pca.transform(x_test)"""
 print(x_train.shape)
 print(x_test.shape)
 print(y_test.shape)
