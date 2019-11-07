@@ -1,9 +1,7 @@
 import tkinter as tk
 from tkinter import *
 import random
-import os
 
-print("re")
 r = Tk()
 r.title('DATA PREDICTION')
 r.geometry('1350x750+0+0')
