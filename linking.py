@@ -68,7 +68,7 @@ def sudha():
     r = Toplevel()
     r.title('PREDICTION OF ONLINE DATA')
     r.geometry('1350x750+0+0')
-    background_imag = PhotoImage(file="back1.png")
+    background_imag = PhotoImage(file="back3.png")
     backgrounda = Label(r, image=background_imag, bd=0)
     backgrounda.pack()
     l = Label(r, font=('arial', 25, 'bold'), text='Prediction Models on', fg='black', bd=10, anchor='w', bg='violet')
