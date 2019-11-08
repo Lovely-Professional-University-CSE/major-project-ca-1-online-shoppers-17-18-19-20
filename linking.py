@@ -7,7 +7,7 @@ import sqlite3
 from tkinter import messagebox
 r= Tk()
 #======================================
-r.title('Non Regular Registration Form')
+r.title('ONLINE SHOPPERS PURCHASING INTENTION PREDICTION ')
 r.geometry('1350x750+0+0')
 r.config(bg='brown')
 background_imag = PhotoImage(file="back1.png")
@@ -66,7 +66,7 @@ backgrounda1.pack()
 #print("re")
 def sudha():
     r = Toplevel()
-    r.title('DATA PREDICTION')
+    r.title('PREDICTION OF ONLINE DATA')
     r.geometry('1350x750+0+0')
     background_imag = PhotoImage(file="back1.png")
     backgrounda = Label(r, image=background_imag, bd=0)
