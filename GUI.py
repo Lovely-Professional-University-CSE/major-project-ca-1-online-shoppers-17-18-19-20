@@ -3,7 +3,7 @@ from tkinter import *
 import random
 
 r = Tk()
-r.title('DATA PREDICTION')
+r.title('PREDICTION OF ONLINE DATA')
 r.geometry('1350x750+0+0')
 background_imag = PhotoImage(file="back1.png")
 backgrounda = Label(r, image=background_imag, bd=0)
