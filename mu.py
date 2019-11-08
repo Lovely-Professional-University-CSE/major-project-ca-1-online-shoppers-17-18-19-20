@@ -11,9 +11,9 @@ data=pd.read_csv('online_shoppers_intention.csv')
 data.shape
 #print(data[0:3])
 #print(data.loc[1:3,['index']])
-x=np.array(data.loc[1:3,['index']])
-t=np.array(data.loc[1:3,['target']])
-w=np.array(data.loc[1:3,['weights']])
+x=np.array(data.loc[1:20,['index']])
+t=np.array(data.loc[1:20,['target']])
+w=np.array(data.loc[1:20,['weights']])
 
 #print(data['index'])
 print(x)
@@ -40,8 +40,8 @@ while(e<=3):
             J=1
             
         
-        print('winning unit is',J+1)
-        print('weight updation ...')
+        #print('winning unit is',J+1)
+        #print('weight updation ...')
         if J==t[i]:
             for m in range(0):
             
@@ -52,7 +52,7 @@ while(e<=3):
                 w[m,J]=w[m,J] - (lrate *(x[i,m]-w[m,J]))
         
        
-        print('Updated weights',w)
+        #print('Updated weights',w)
         
 
     e=e+1
