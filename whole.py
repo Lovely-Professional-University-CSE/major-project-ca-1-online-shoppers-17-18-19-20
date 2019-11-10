@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import*
 r= Tk()
 #======================================
-r.title('Non Regular Registration Form')
+r.title('main page')
 r.geometry('1350x750+0+0')
 r.config(bg='brown')
 background_imag = PhotoImage(file="back1.png")
@@ -40,7 +40,7 @@ l2.place(x=2,y=300)
 
 import webbrowser
 new = 1
-url = "https://en.wikipedia.org/wiki/Online_shopping#Growth_in_online_shoppers"
+url = ""
 
 def openweb():
     webbrowser.open(url,new=new)
@@ -66,6 +66,9 @@ def sudha1():
     background_imag2 = PhotoImage(file="jp.png")
     backgrounda = Label(pw, image=background_imag2, bd=0)
     backgrounda.pack()
+
+    def back():
+        pw.destroy()
     l = Label(pw, font=('Goudy Stout', 25, 'bold italic'), text='Perceptron Model', fg='white', bd=10, anchor='w',
               bg='black')
     l.place(x=400, y=30)
@@ -74,8 +77,10 @@ def sudha1():
     background_imag3 = PhotoImage(file="bs.png")
     backgroundai = Label(f1, image=background_imag3, bd=0)
     backgroundai.pack()
-    f2 = Frame(pw,width=280, height=60, relief='sunken', bg='black')
+    f2 = Frame(pw,width=340, height=60, relief='sunken', bg='black')
     f2.place(x=800, y=300)
+    f3 = Frame(pw, width=280, height=60, relief='sunken', bg='black')
+    f3.place(x=800, y=600)
 
     import webbrowser
     new = 1
@@ -84,12 +89,13 @@ def sudha1():
     def openweb():
         webbrowser.open(url, new=new)
 
-    Btn = Button(f2, text="Click here for code of perceptron", width=35, font=('arial', 15, 'bold'), bg='white', command=openweb)
+    Btn = Button(f2, text="Click here for code of perceptron", width=0, font=('arial', 15, 'bold'), bg='white', command=openweb)
     Btn.place(x=0, y=8)
+    b1 = Button(f3, text="back", command=back, font=('arial', 15), fg="black", bg='white', bd=4).pack(side=LEFT)
     pw.mainloop()
     # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
     # Btn.place(x=160,y=50)
-    r.mainloop()
+    pw.mainloop()
 
 def sudha():
     r = Toplevel()
@@ -98,22 +104,28 @@ def sudha():
     background_imag = PhotoImage(file="back3.png")
     backgrounda = Label(r, image=background_imag, bd=0)
     backgrounda.pack()
-    l = Label(r, font=('arial', 25, 'bold'), text='Prediction Models on', fg='black', bd=10, anchor='w', bg='violet')
+
+
+    l = Label(r, font=('arial', 25, 'bold'), text='Prediction Models on', fg='black', bd=10, anchor='w', bg='white')
     l.place(x=500, y=10)
     l = Label(r, font=('arial', 25, 'bold'), text='online shopperspurchasing Dataset', fg='black', bd=10, anchor='w',
-              bg='violet')
+              bg='white')
     l.place(x=430, y=80)
-    btnl = Button(r, text='Perceptron Model', width=30, font=('times new roman', 20, 'bold'), bg='brown',command=sudha1)
+    btnl = Button(r, text='Perceptron Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=sudha1)
     btnl.place(x=0, y=300)
-    btnl = Button(r, text='SOM Model', width=30, font=('times new roman', 20, 'bold'), bg='brown')
+    btnl = Button(r, text='SOM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black')
     btnl.place(x=0, y=400)
-    btnl = Button(r, text='SVM Model', width=30, font=('times new roman', 20, 'bold'), bg='brown',)
+    btnl = Button(r, text='SVM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black')
     btnl.place(x=0, y=500)
-    btnl = Button(r, text='LVQ Model', width=30, font=('times new roman', 20, 'bold'), bg='brown')
+    btnl = Button(r, text='LVQ Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black')
     btnl.place(x=0, y=600)
+    def back():
+       r.destroy()
 
-    # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
-    # Btn.place(x=160,y=50)
+    f4 = Frame(r, width=280, height=60, relief='sunken', bg='black')
+    f4.place(x=50, y=680)
+    btn = Button(f4, text="back", command=back, font=('arial', 15), fg="black", bg='white', bd=4).pack(side=LEFT)
+
     r.mainloop()
 
 
@@ -123,5 +135,7 @@ l2=Label(embed2,font=('arial',18,'bold'),text='Click to Go to the data training 
 l2.place(x=4,y=5)
 Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=sudha)
 Btn.place(x=160,y=50)
+
+
 r.mainloop()
 
