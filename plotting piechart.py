@@ -24,7 +24,7 @@ plt.show()
 
 # plotting a pie chart for browsers
 size = [179961, 124621, 17361, 14671,31741, 41613, 51300]
-colors = ['orange', 'yellow', 'pink', 'crimson', 'lightgreen', 'cyan', 'blue']
+colors = ['lightgreen', 'red', 'pink', 'crimson', 'lime', 'cyan', 'pink']
 labels = "2", "1","4","5","6","10","others"
 
 plt.subplot(1, 1, 1)
