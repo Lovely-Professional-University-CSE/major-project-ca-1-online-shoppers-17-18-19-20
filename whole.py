@@ -100,7 +100,7 @@ def sudha1():
     
 def bharath():
     pw = Toplevel()
-    pw.title("Perceptron")
+    pw.title("LVQ")
     pw.geometry('1360x850+0+0')
     #background_imag2 = PhotoImage(file="jp.png")
     #backgrounda = Label(pw, image=background_imag2, bd=0)
@@ -108,7 +108,7 @@ def bharath():
 
     def back():
         pw.destroy()
-    l = Label(pw, font=('Goudy Stout', 25, 'bold italic'), text='Perceptron Model', fg='white', bd=10, anchor='w',
+    l = Label(pw, font=('Goudy Stout', 25, 'bold italic'), text='LVQ', fg='white', bd=10, anchor='w',
               bg='black')
     l.place(x=400, y=30)
     f1 = Frame(pw, width=700, height=500, relief='sunken', bg='black')
@@ -128,7 +128,7 @@ def bharath():
     def openweb():
         webbrowser.open(url, new=new)
 
-    Btn = Button(f2, text="Click here for code of perceptron", width=0, font=('arial', 15, 'bold'), bg='white', command=openweb)
+    Btn = Button(f2, text="Click here for code of LVQ", width=0, font=('arial', 15, 'bold'), bg='white', command=openweb)
     Btn.place(x=0, y=8)
     b1 = Button(f3, text="back", command=back, font=('arial', 15), fg="black", bg='white', bd=4).pack(side=LEFT)
     pw.mainloop()
