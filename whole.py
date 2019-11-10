@@ -96,7 +96,47 @@ def sudha1():
     # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
     # Btn.place(x=160,y=50)
     pw.mainloop()
+    
+    
+def bharath():
+    pw = Toplevel()
+    pw.title("Perceptron")
+    pw.geometry('1360x850+0+0')
+    #background_imag2 = PhotoImage(file="jp.png")
+    #backgrounda = Label(pw, image=background_imag2, bd=0)
+    #backgrounda.pack()
 
+    def back():
+        pw.destroy()
+    l = Label(pw, font=('Goudy Stout', 25, 'bold italic'), text='Perceptron Model', fg='white', bd=10, anchor='w',
+              bg='black')
+    l.place(x=400, y=30)
+    f1 = Frame(pw, width=700, height=500, relief='sunken', bg='black')
+    f1.place(x=100, y=120)
+    #background_imag3 = PhotoImage(file="bs.png")
+    #backgroundai = Label(f1, image=background_imag3, bd=0)
+    #backgroundai.pack()
+    f2 = Frame(pw,width=340, height=60, relief='sunken', bg='black')
+    f2.place(x=800, y=300)
+    f3 = Frame(pw, width=280, height=60, relief='sunken', bg='black')
+    f3.place(x=800, y=600)
+
+    import webbrowser
+    new = 1
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/mu.py"
+
+    def openweb():
+        webbrowser.open(url, new=new)
+
+    Btn = Button(f2, text="Click here for code of perceptron", width=0, font=('arial', 15, 'bold'), bg='white', command=openweb)
+    Btn.place(x=0, y=8)
+    b1 = Button(f3, text="back", command=back, font=('arial', 15), fg="black", bg='white', bd=4).pack(side=LEFT)
+    pw.mainloop()
+    # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
+    # Btn.place(x=160,y=50)
+    pw.mainloop()
+    
+    
 def sudha():
     r = Toplevel()
     r.title('DATA PREDICTION')
@@ -113,7 +153,7 @@ def sudha():
     l.place(x=430, y=80)
     btnl = Button(r, text='Perceptron Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=sudha1)
     btnl.place(x=0, y=300)
-    btnl = Button(r, text='SOM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black')
+    btnl = Button(r, text='SOM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=bharath)
     btnl.place(x=0, y=400)
     btnl = Button(r, text='SVM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black')
     btnl.place(x=0, y=500)
