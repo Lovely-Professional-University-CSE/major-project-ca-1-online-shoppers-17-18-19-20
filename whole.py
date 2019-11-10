@@ -74,18 +74,18 @@ def sudha1():
     background_imag3 = PhotoImage(file="bs.png")
     backgroundai = Label(f1, image=background_imag3, bd=0)
     backgroundai.pack()
-    f2 = Frame(pw,width=230, height=60, relief='sunken', bg='black')
+    f2 = Frame(pw,width=280, height=60, relief='sunken', bg='black')
     f2.place(x=800, y=300)
 
     import webbrowser
     new = 1
-    url = "https://en.wikipedia.org/wiki/Online_shopping#Growth_in_online_shoppers"
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model.ipynb"
 
     def openweb():
         webbrowser.open(url, new=new)
 
-    Btn = Button(f2, text="Click here for video", width=15, font=('arial', 15, 'bold'), bg='white', command=openweb)
-    Btn.place(x=23, y=8)
+    Btn = Button(f2, text="Click here for code of perceptron", width=35, font=('arial', 15, 'bold'), bg='white', command=openweb)
+    Btn.place(x=0, y=8)
     pw.mainloop()
     # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
     # Btn.place(x=160,y=50)
