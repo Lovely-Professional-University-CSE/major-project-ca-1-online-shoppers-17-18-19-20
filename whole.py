@@ -208,8 +208,7 @@ def bharath():
 
     import webbrowser
     new = 1
-    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model.ipynb"
-
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/mu.py"
     def openweb():
         webbrowser.open(url, new=new)
 
