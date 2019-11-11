@@ -6,7 +6,7 @@ r= Tk()
 r.title('main page')
 r.geometry('1350x750+0+0')
 r.config(bg='brown')
-background_imag = PhotoImage(file="back1.png")
+background_imag = PhotoImage(file="bt9.png")
 backgrounda = Label(r, image=background_imag, bd=0)
 backgrounda.pack()
 top=Frame(r,width=1300,height=50,bg='brown',relief=SUNKEN)
@@ -50,7 +50,7 @@ Btn.place(x=190,y=330)
 embed1=Frame(r,width=500,height=400)
 embed1.place(x=800,y=210)
 
-background_imag1 = PhotoImage(file="back4.png")
+background_imag1 = PhotoImage(file="back9.png")
 backgrounda1 = Label(embed1, image=background_imag1, bd=0)
 backgrounda1.pack()
 #import tkinter as tk
@@ -96,47 +96,133 @@ def sudha1():
     # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
     # Btn.place(x=160,y=50)
     pw.mainloop()
-    
-    
-def bharath():
-    pw = Toplevel()
-    pw.title("LVQ")
-    pw.geometry('1360x850+0+0')
-    #background_imag2 = PhotoImage(file="jp.png")
-    #backgrounda = Label(pw, image=background_imag2, bd=0)
-    #backgrounda.pack()
+
+
+def sudha2():
+    w = Toplevel()
+    w.title("SOM")
+    w.geometry('1360x850+0+0')
+    background1_imag2 = PhotoImage(file="back6.png")
+    backgrounda1 = Label(w, image=background1_imag2, bd=0)
+    backgrounda1.pack()
 
     def back():
-        pw.destroy()
-    l = Label(pw, font=('Goudy Stout', 25, 'bold italic'), text='LVQ', fg='white', bd=10, anchor='w',
+        w.destroy()
+
+    l = Label(w, font=('Matura MT Script Capitals', 25, 'bold italic'), text='self organizing map Model', fg='white', bd=10, anchor='w',
               bg='black')
-    l.place(x=400, y=30)
-    f1 = Frame(pw, width=700, height=500, relief='sunken', bg='black')
+    l.place(x=300, y=30)
+    f1 = Frame(w, width=700, height=500, relief='sunken', bg='black')
     f1.place(x=100, y=120)
-    #background_imag3 = PhotoImage(file="bs.png")
-    #backgroundai = Label(f1, image=background_imag3, bd=0)
-    #backgroundai.pack()
-    f2 = Frame(pw,width=340, height=60, relief='sunken', bg='black')
+    background_imag3 = PhotoImage(file="bs.png")
+    backgroundai = Label(f1, image=background_imag3, bd=0)
+    backgroundai.pack()
+    f2 = Frame(w, width=340, height=60, relief='sunken', bg='black')
     f2.place(x=800, y=300)
-    f3 = Frame(pw, width=280, height=60, relief='sunken', bg='black')
+    f3 = Frame(w, width=280, height=60, relief='sunken', bg='black')
     f3.place(x=800, y=600)
 
     import webbrowser
     new = 1
-    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/mu.py"
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model.ipynb"
 
     def openweb():
         webbrowser.open(url, new=new)
 
-    Btn = Button(f2, text="Click here for code of LVQ", width=0, font=('arial', 15, 'bold'), bg='white', command=openweb)
+    Btn = Button(f2, text="Click here for code of SOM model", width=0, font=('arial', 15, 'bold'), bg='white',
+                 command=openweb)
     Btn.place(x=0, y=8)
     b1 = Button(f3, text="back", command=back, font=('arial', 15), fg="black", bg='white', bd=4).pack(side=LEFT)
-    pw.mainloop()
+    w.mainloop()
     # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
     # Btn.place(x=160,y=50)
-    pw.mainloop()
-    
-    
+    #pw.mainloop()
+
+
+def sudha3():
+    w1 = Toplevel()
+    w1.title("Support Vector Machine")
+    w1.geometry('1360x850+0+0')
+    background1_imag2 = PhotoImage(file="back7.png")
+    backgrounda1 = Label(w1, image=background1_imag2, bd=0)
+    backgrounda1.pack()
+
+    def back():
+        w1.destroy()
+
+    l = Label(w1, font=('Matura MT Script Capitals', 25, 'bold italic'), text='Support Vector Machine Model', fg='white',
+              bd=10, anchor='w',
+              bg='black')
+    l.place(x=300, y=30)
+    f1 = Frame(w1, width=700, height=500, relief='sunken', bg='black')
+    f1.place(x=100, y=120)
+    background_imag3 = PhotoImage(file="bs.png")
+    backgroundai = Label(f1, image=background_imag3, bd=0)
+    backgroundai.pack()
+    f2 = Frame(w1, width=340, height=60, relief='sunken', bg='black')
+    f2.place(x=800, y=300)
+    f3 = Frame(w1, width=280, height=60, relief='sunken', bg='black')
+    f3.place(x=800, y=600)
+
+    import webbrowser
+    new = 1
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model.ipynb"
+
+    def openweb():
+        webbrowser.open(url, new=new)
+
+    Btn = Button(f2, text="Click here for code of SVM model", width=0, font=('arial', 15, 'bold'), bg='white',
+                 command=openweb)
+    Btn.place(x=0, y=8)
+    b1 = Button(f3, text="back", command=back, font=('arial', 15), fg="black", bg='white', bd=4).pack(side=LEFT)
+    w1.mainloop()
+    # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
+    # Btn.place(x=160,y=50)
+    # pw.mainloop()
+
+
+def sudha4():
+    w2 = Toplevel()
+    w2.title("LVQ")
+    w2.geometry('1360x850+0+0')
+    background1_imag2 = PhotoImage(file="back8.png")
+    backgrounda1 = Label(w2, image=background1_imag2, bd=0)
+    backgrounda1.pack()
+
+    def back():
+        w2.destroy()
+
+    l = Label(w2, font=('Matura MT Script Capitals', 25, 'bold italic'), text='Learning Vector Quantization Model', fg='white',
+              bd=10, anchor='w',
+              bg='black')
+    l.place(x=300, y=30)
+    f1 = Frame(w2, width=700, height=500, relief='sunken', bg='black')
+    f1.place(x=100, y=120)
+    background_imag3 = PhotoImage(file="bs.png")
+    backgroundai = Label(f1, image=background_imag3, bd=0)
+    backgroundai.pack()
+    f2 = Frame(w2, width=340, height=60, relief='sunken', bg='black')
+    f2.place(x=800, y=300)
+    f3 = Frame(w2, width=280, height=60, relief='sunken', bg='black')
+    f3.place(x=800, y=600)
+
+    import webbrowser
+    new = 1
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model.ipynb"
+
+    def openweb():
+        webbrowser.open(url, new=new)
+
+    Btn = Button(f2, text="Click here for code of LVQ model", width=0, font=('arial', 15, 'bold'), bg='white',
+                 command=openweb)
+    Btn.place(x=0, y=8)
+    b1 = Button(f3, text="back", command=back, font=('arial', 15), fg="black", bg='white', bd=4).pack(side=LEFT)
+    w2.mainloop()
+    # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
+    # Btn.place(x=160,y=50)
+    # pw.mainloop()
+
+
 def sudha():
     r = Toplevel()
     r.title('DATA PREDICTION')
@@ -153,11 +239,11 @@ def sudha():
     l.place(x=430, y=80)
     btnl = Button(r, text='Perceptron Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=sudha1)
     btnl.place(x=0, y=300)
-    btnl = Button(r, text='SOM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=bharath)
+    btnl = Button(r, text='SOM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=sudha2)
     btnl.place(x=0, y=400)
-    btnl = Button(r, text='SVM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black')
+    btnl = Button(r, text='SVM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=sudha3)
     btnl.place(x=0, y=500)
-    btnl = Button(r, text='LVQ Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black')
+    btnl = Button(r, text='LVQ Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=sudha4)
     btnl.place(x=0, y=600)
     def back():
        r.destroy()
