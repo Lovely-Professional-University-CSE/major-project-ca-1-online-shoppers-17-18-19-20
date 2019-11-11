@@ -181,11 +181,11 @@ def sudha3():
     # pw.mainloop()
 
 
-def sudha4():
+def bharath():
     w2 = Toplevel()
     w2.title("LVQ")
     w2.geometry('1360x850+0+0')
-    background1_imag2 = PhotoImage(file="back8.png")
+    background1_imag2 = PhotoImage(file="shopping.png")
     backgrounda1 = Label(w2, image=background1_imag2, bd=0)
     backgrounda1.pack()
 
@@ -196,7 +196,7 @@ def sudha4():
               bd=10, anchor='w',
               bg='black')
     l.place(x=300, y=30)
-    f1 = Frame(w2, width=700, height=500, relief='sunken', bg='black')
+    f1 = Frame(w2, width=700, height=500, relief='sunken', bg='sky blue')
     f1.place(x=100, y=120)
     background_imag3 = PhotoImage(file="bs.png")
     backgroundai = Label(f1, image=background_imag3, bd=0)
@@ -243,7 +243,7 @@ def sudha():
     btnl.place(x=0, y=400)
     btnl = Button(r, text='SVM Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=sudha3)
     btnl.place(x=0, y=500)
-    btnl = Button(r, text='LVQ Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=sudha4)
+    btnl = Button(r, text='LVQ Model', width=30, font=('times new roman', 20, 'bold'), bg='white',fg='black',command=bharath)
     btnl.place(x=0, y=600)
     def back():
        r.destroy()
