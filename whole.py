@@ -6,7 +6,7 @@ r= Tk()
 r.title('main page')
 r.geometry('1350x750+0+0')
 r.config(bg='brown')
-background_imag = PhotoImage(file="bt9.png")
+background_imag = PhotoImage(file="back3.png")
 backgrounda = Label(r, image=background_imag, bd=0)
 backgrounda.pack()
 top=Frame(r,width=1300,height=50,bg='brown',relief=SUNKEN)
@@ -50,7 +50,7 @@ Btn.place(x=190,y=330)
 embed1=Frame(r,width=500,height=400)
 embed1.place(x=800,y=210)
 
-background_imag1 = PhotoImage(file="back9.png")
+background_imag1 = PhotoImage(file="back12.png")
 backgrounda1 = Label(embed1, image=background_imag1, bd=0)
 backgrounda1.pack()
 #import tkinter as tk
@@ -84,7 +84,7 @@ def sudha1():
 
     import webbrowser
     new = 1
-    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model.ipynb"
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model1.ipynb"
 
     def openweb():
         webbrowser.open(url, new=new)
@@ -92,9 +92,13 @@ def sudha1():
     Btn = Button(f2, text="Click here for code of perceptron", width=0, font=('arial', 15, 'bold'), bg='white', command=openweb)
     Btn.place(x=0, y=8)
     b1 = Button(f3, text="back", command=back, font=('arial', 15), fg="black", bg='white', bd=4).pack(side=LEFT)
-    pw.mainloop()
-    # Btn = Button(embed2, text = "GO",width=15,font=('arial',15,'bold'),bg='orange',relief='ridge',command=model)
-    # Btn.place(x=160,y=50)
+    from tkinter import messagebox
+    with open("accuracy.txt") as f:
+        x=f.readlines()
+    def function():
+        messagebox.showinfo('Accuracy of trained model is  %s   '%(x[0].strip()))
+    Btn = Button(f3, text = "Accuracy",width=15,font=('arial',15,'bold'),bg='white',fg='black',relief='ridge',command=function)
+    Btn.pack(side=RIGHT)
     pw.mainloop()
 
 
@@ -124,8 +128,7 @@ def sudha2():
 
     import webbrowser
     new = 1
-    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model.ipynb"
-
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/SOM_Online_shoppers.py"
     def openweb():
         webbrowser.open(url, new=new)
 
@@ -166,7 +169,7 @@ def sudha3():
 
     import webbrowser
     new = 1
-    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/Perceptron_Model.ipynb"
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/SVM_online_predition.ipynb"
 
     def openweb():
         webbrowser.open(url, new=new)
@@ -185,7 +188,7 @@ def bharath():
     w2 = Toplevel()
     w2.title("LVQ")
     w2.geometry('1360x850+0+0')
-    background1_imag2 = PhotoImage(file="shopping.png")
+    background1_imag2 = PhotoImage(file="back8.png")
     backgrounda1 = Label(w2, image=background1_imag2, bd=0)
     backgrounda1.pack()
 
@@ -196,7 +199,7 @@ def bharath():
               bd=10, anchor='w',
               bg='black')
     l.place(x=300, y=30)
-    f1 = Frame(w2, width=700, height=500, relief='sunken', bg='sky blue')
+    f1 = Frame(w2, width=700, height=500, relief='sunken', bg='black')
     f1.place(x=100, y=120)
     background_imag3 = PhotoImage(file="bs.png")
     backgroundai = Label(f1, image=background_imag3, bd=0)
@@ -208,7 +211,8 @@ def bharath():
 
     import webbrowser
     new = 1
-    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/mu.py"
+    url = "https://github.com/Lovely-Professional-University-CSE/major-project-ca-1-online-shoppers-17-18-19-20/blob/master/mu.ipynb"
+
     def openweb():
         webbrowser.open(url, new=new)
 
@@ -226,7 +230,7 @@ def sudha():
     r = Toplevel()
     r.title('DATA PREDICTION')
     r.geometry('1350x750+0+0')
-    background_imag = PhotoImage(file="back3.png")
+    background_imag = PhotoImage(file="back13.png")
     backgrounda = Label(r, image=background_imag, bd=0)
     backgrounda.pack()
 
